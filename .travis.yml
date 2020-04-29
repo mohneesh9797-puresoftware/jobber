@@ -9,8 +9,14 @@ services:
 
 script:
   - docker pull alpine:latest
-  - docker run -it <docker image name> /bin/sh
+  - docker run -it alpine:latest /bin/sh
   - apk update
+  - apk add -y go
+  - apk add -y rsync
+  - apk add -y make
+  - apk add -y git 
+  - apk add -y gcc 
+  - apk add -y musl-dev
   - apk add -y alpine-sdk
   - apk add -y git 
   - adduser mohneeesh
