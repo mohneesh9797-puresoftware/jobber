@@ -1,7 +1,9 @@
 sudo: required
 
 language: Go
-
+arch:
+    - arm64
+    - amd64
 services:
   - docker
 
