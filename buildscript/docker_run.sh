@@ -4,4 +4,4 @@ srcdir=$( cd "/home/travis/gopath/src/github.com/mohneesh9797-puresoftware/"  &&
 echo "srcdir=$srcdir"
 LS = $(ls)
 echo $LS
-docker run --rm -v $srcdir:/root/mohneesh9797-puresoftware/jobber alpine:latest /bin/sh /root/mohneesh-puresoftware/jobber/buildscript/build_alpine.sh 
+docker run --rm -v $srcdir:/root/mohneesh9797-puresoftware/jobber/ alpine:latest /bin/sh /root/mohneesh-puresoftware/jobber/buildscript/build_alpine.sh 
