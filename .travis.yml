@@ -9,5 +9,5 @@ services:
 
 script:
   - docker pull alpine:latest
-  - bash ./buildscripts/docker_run.sh build_alpine.sh
+  - bash ./buildscript/docker_run.sh build_alpine.sh
 
