@@ -11,5 +11,5 @@ script:
   - PWD= pwd
   - echo $PWD
   - docker pull alpine:latest
-  - bash ./buildscript/docker_run.sh build_alpine.sh
+  - bash buildscript/docker_run.sh build_alpine.sh
 
