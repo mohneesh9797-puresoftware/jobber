@@ -5,4 +5,4 @@ echo "srcdir=$srcdir"
 src=$(ls "/root/")
 LS = $(ls)
 echo $LS
-docker run --rm -v $srcdir:/root/mohneesh9797-puresoftware/jobber/ alpine:latest /bin/sh $(ls)
+docker run --rm -v $srcdir:/root/mohneesh9797-puresoftware/jobber/ alpine:latest 
