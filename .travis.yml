@@ -7,9 +7,7 @@ arch:
 services:
   - docker
 
-script:
-  - PWD=pwd
-  - echo $PWD
-  - docker pull alpine:latest
-  - bash buildscript/docker_run.sh build_alpine.sh
+script:  
+  - make check
+  - make -C smoke_tests
 
